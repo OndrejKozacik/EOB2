@@ -82,7 +82,7 @@ their levels, their spells and the gear the original lets cross over.
 | `F1`–`F6` | Pick a character, as in the original; `Shift`+`F1`–`F6` swaps two characters |
 | `I` | Inventory of the picked character; `P` switches to the character's statistics |
 | `C`, `Esc` | Camp |
-| `M` | Automap |
+| `Tab`, `M` | Automap |
 | `1`–`6`, `,` `.` `Space` | In the spellbook: spell level, previous / next spell, cast |
 | `Ctrl`+`F2` / `Ctrl`+`F4` | Quick save / load in the current slot (`Alt` works too) |
 | `Ctrl`+`F6` | Switch between the original artwork and the upscaled pack |
@@ -143,12 +143,30 @@ corridor ahead.*
 
 *The beholder from the top of the page, in the original 320×200 layout and artwork.*
 
+### Automap from the Amiga AGA version
+
+In 2006 CFou! rebuilt both games for the Amiga's AGA chipset and gave them something the PC
+originals never had: an automap. It is carried over here one to one — the crumpled parchment,
+the little icons, the Amiga font, the legend and the rules that decide what gets drawn,
+right down to its quirks. Places such as Darkmoon, the tomb in the forest or the mantis nest
+join the legend once the party has seen them, and typing C-F-O-U on the map switches on its
+cheat mode, exactly as on the Amiga.
+
+It is the default map: `Tab` or `M` opens it. The Lands of Lore map below is one click away
+in *Camp → Preferences*, and both reveal the same squares, so switching never loses what the
+party has already explored.
+
+![The Amiga automap of the forest around Darkmoon](docs/automap-amiga.png)
+
+*The forest around Darkmoon part way through, with the temple and the tomb marked.*
+
 ### Lands of Lore automap
 
-The original has no automap. This one is drawn with the marker artwork from Westwood's
-*Lands of Lore* — doors, stairs, levers, niches, pressure plates, pits, teleports and
-spinners each get their own mark, and every level is named after the part of Darkmoon it
-belongs to. The arrows page through the levels the party has already visited.
+The original has no automap. The second map style is drawn with the marker artwork from
+Westwood's *Lands of Lore* — doors, stairs, levers, keyholes, niches, pressure plates, pits,
+teleports, portals and spinners each get their own mark, secret walls show up once the party
+has walked through them, and every level is named after the part of Darkmoon it belongs to.
+The arrows page through the levels the party has already visited.
 
 ![A partly explored automap of the temple](docs/automap.png)
 
@@ -204,3 +222,6 @@ the first step to the last yet — this is a release candidate, and reports are 
 The game data itself is not in this repository. The build is produced from a personal
 copy of the original game, and the graphics, sounds and maps are baked into the package
 at build time.
+
+The Amiga automap is CFou!'s work from his Eye of the Beholder AGA releases (2006, giftware);
+its parchment, icons and font are read from that release at build time.
