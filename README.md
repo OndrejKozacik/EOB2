@@ -87,11 +87,43 @@ their levels, their spells and the gear the original lets cross over.
 | `Ctrl`+`F2` / `Ctrl`+`F4` | Quick save / load in the current slot (`Alt` works too) |
 | `Ctrl`+`F6` | Switch between the original artwork and the upscaled pack |
 | `F7` | Switch between the wide layout and the original 320×200 one |
+| `Alt`+`Enter` | Full screen on / off |
 | `Alt`+`S` / `Alt`+`M` | Sounds / music on / off, as in the original |
 
 The original uses the F keys for the characters, so the remake's own save, load and artwork
 keys sit on `Ctrl` (or `Alt`). A save slot is chosen through the camp menu, as in the
 original.
+
+## Display settings
+
+`Alt`+`Enter` switches full screen on and off at any time, menus included.
+
+How the game starts is set in a small INI file next to the executable,
+`Eye of the Beholder II.ini`. The game creates it on its first run with these values, which
+keep the default of a 1280×720 window:
+
+```ini
+[Display]
+; 1 = full screen, 0 = window
+Fullscreen = 0
+; 1 = maximized window (only when Fullscreen = 0)
+MaximizeWindow = 0
+; window size in pixels, e.g. 1280x720 or 1920x1080
+; (only when Fullscreen = 0 and MaximizeWindow = 0)
+Resolution = 1280x720
+```
+
+`Fullscreen` takes priority over `MaximizeWindow`, which in turn takes priority over
+`Resolution`. A window larger than the screen is shrunk to fit, and a value the game cannot
+read falls back to the default. `Alt`+`Enter` writes its choice into `Fullscreen`, so the next
+start opens the same way.
+
+On Windows and Linux the game also keeps an `override.cfg` beside the INI file. Godot reads it
+before it opens the window, so the game starts straight in the chosen mode and size, splash
+screen included. Edit the INI file, not that one; after editing the INI by hand, the first
+start still switches once the game has loaded, and every start after that opens directly.
+On macOS the INI file sits with the saved games in `~/Library/Application Support/`, and the
+window switches once the game has loaded.
 
 ## What the original gives us
 
