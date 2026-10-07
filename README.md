@@ -94,6 +94,23 @@ The original uses the F keys for the characters, so the remake's own save, load 
 keys sit on `Ctrl` (or `Alt`). A save slot is chosen through the camp menu, as in the
 original.
 
+### On a Mac
+
+A MacBook often has no F keys at all, and `Ctrl` shortcuts feel out of place there, so on
+macOS the same actions also sit on `Cmd`:
+
+| Key | Action |
+| --- | --- |
+| `Cmd`+`1`–`6` | Pick a character, same as `F1`–`F6`; `Shift`+`Cmd`+`1`–`6` swaps two characters |
+| `Cmd`+`7` | Switch the layout, same as `F7` |
+| `Cmd`+`S` / `Cmd`+`L` | Save / load game, same as `Ctrl`+`F2` / `Ctrl`+`F4` |
+| `Cmd`+`G` | Switch between the original artwork and the upscaled pack, same as `Ctrl`+`F6` |
+| `Ctrl`+`Cmd`+`F` | Full screen on / off (`Option`+`Return` works too) |
+| `Option`+`S` / `Option`+`M` | Sounds / music on / off |
+
+`Cmd`+`Q`, `Cmd`+`M`, `Cmd`+`H` and `Cmd`+`W` are left to macOS. Turning also works on `Q` / `E`,
+so the missing `Home` and `PgUp` keys are not needed.
+
 ## Display settings
 
 `Alt`+`Enter` switches full screen on and off at any time, menus included.
